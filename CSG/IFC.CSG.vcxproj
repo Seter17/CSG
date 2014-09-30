@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DDCE9738-0ECB-4462-B9E7-151922DBED73}</ProjectGuid>
+    <RootNamespace>IFCCSG</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <ProjectName>CSG</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\..\build\$(Platform)_$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\..\build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\..\build\$(SolutionName)\$(Platform)_$(Configuration)_vc80\tmp\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)\..\build\$(SolutionName)\$(Platform)_$(Configuration)_vc80\tmp\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\contrib\include;$(SolutionDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;XML_STATIC;PUT_OCTAG_IN_NAMESPACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)\..\build\$(Platform)_$(Configuration)\lib\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\contrib\include;$(SolutionDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;XML_STATIC;PUT_OCTAG_IN_NAMESPACE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)\..\build\$(SolutionName)\$(Platform)_$(Configuration)_vc80\lib\$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataTypes\Color3.cpp" />
+    <ClCompile Include="Extent.cpp" />
+    <ClCompile Include="DataTypes\Matrix3.cpp" />
+    <ClCompile Include="DataTypes\Matrix4.cpp" />
+    <ClCompile Include="DataTypes\NUQuaternion.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Polygon.cpp" />
+    <ClCompile Include="DataTypes\Quaternion.cpp" />
+    <ClCompile Include="DataTypes\Rotation4.cpp" />
+    <ClCompile Include="Segment.cpp" />
+    <ClCompile Include="TriangulatedSurface.cpp" />
+    <ClCompile Include="DataTypes\Vec2.cpp" />
+    <ClCompile Include="DataTypes\Vec3.cpp" />
+    <ClCompile Include="DataTypes\Vec4.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataTypes\Color3.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="Extent.h" />
+    <ClInclude Include="DataTypes\Matrix3.h" />
+    <ClInclude Include="DataTypes\Matrix4.h" />
+    <ClInclude Include="DataTypes\NUQuaternion.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Polygon.h" />
+    <ClInclude Include="DataTypes\Quaternion.h" />
+    <ClInclude Include="DataTypes\Rotation4.h" />
+    <ClInclude Include="Segment.h" />
+    <ClInclude Include="TriangulatedSurface.h" />
+    <ClInclude Include="DataTypes\Vec2.h" />
+    <ClInclude Include="DataTypes\Vec3.h" />
+    <ClInclude Include="DataTypes\Vec4.h" />
+    <ClInclude Include="Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataTypes\Color3.inl" />
+    <None Include="Extent.inl" />
+    <None Include="DataTypes\Matrix3.inl" />
+    <None Include="DataTypes\Matrix4.inl" />
+    <None Include="DataTypes\NUQuaternion.inl" />
+    <None Include="Object.inl" />
+    <None Include="Polygon.inl" />
+    <None Include="DataTypes\Quaternion.inl" />
+    <None Include="DataTypes\Rotation4.inl" />
+    <None Include="Segment.inl" />
+    <None Include="DataTypes\Vec2.inl" />
+    <None Include="DataTypes\Vec3.inl" />
+    <None Include="DataTypes\Vec4.inl" />
+    <None Include="Vertex.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

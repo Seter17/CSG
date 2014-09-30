@@ -1,0 +1,41 @@
+Object: 4, Hedron1, 0xD99308
+Scale: -1.5
+Translation: -1; 0.5; -1.5
+Facet: 3, Front
+0; 0; 0
+2; 0; 0
+0; 1; 0
+Facet: 3, Right
+0; 1; 0
+2; 0; 0
+0; 0; -3
+Facet: 3, Left
+0; 0; -3
+0; 0; 0
+0; 1; 0
+Facet: 3, Down
+2; 0; 0
+0; 0; 0
+0; 0; -3
+
+Object: 4, Hedron2, 0xD99308
+Scale: -4.5
+Translation: 3; 0; -1
+Facet: 3, Front
+0; 0; 0
+2; 0; 0
+0; 1; 0
+Facet: 3, Right
+0; 1; 0
+2; 0; 0
+0; 0; -3
+Facet: 3, Left
+0; 0; -3
+0; 0; 0
+0; 1; 0
+Facet: 3, Down
+2; 0; 0
+0; 0; 0
+0; 0; -3
+
+

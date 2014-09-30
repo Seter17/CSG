@@ -1,0 +1,24 @@
+Object: 5, SuperExample, 0x00FAC2
+Translation: 1; 1; 1;
+Facet: 3, Front
+-5; -5; 5
+5; -5; 5
+0; 3; 0
+Facet: 3, Back
+-5; -5; -5
+0; 3; 0
+5; -5; -5
+Facet: 3, Left
+-5; -5; -5
+-5; -5; 5
+0; 3; 0
+Facet: 3, Right
+5; -5; -5
+0; 3; 0
+5; -5; 5
+Facet: 4, Bottom
+-5; -5; -5
+5; -5; -5
+5; -5; 5
+-5; -5; 5
+

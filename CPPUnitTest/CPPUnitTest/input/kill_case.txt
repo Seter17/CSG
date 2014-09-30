@@ -1,0 +1,39 @@
+Object: 6, Hedron1, 0xD99308
+Facet: 3, Front
+0; -2; 1
+0; 0; -1
+1; 1; 0
+Facet: 3, InnerFront
+0; 0; -1
+0; 0; 0
+1; 1; 0
+Facet: 3, InnerBack
+0; 0; -1
+-1; 1; 0
+0; 0; 0
+Facet: 3, InnerTop
+1; 1; 0
+0; 0; 0
+-1; 1; 0
+Facet: 3, Back
+0; -2; 1
+-1; 1; 0
+0; 0; -1
+Facet: 3, Top
+1; 1; 0
+-1; 1; 0
+0; -2; 1
+
+Object: 6, Hedron2, 0xD99308
+Facet: 3, Front
+0; -1; 0
+0; 0; -1
+1; 1; 0
+Facet: 3, Top
+1; 1; 0
+-1; 1; 0
+0; -1; 0
+Facet: 3, Back
+0; 0; -1
+-1; 1; 0
+1; 1; 0
