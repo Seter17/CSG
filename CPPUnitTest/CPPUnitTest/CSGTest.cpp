@@ -30,8 +30,8 @@ void CSGTest::DetectIntersection() {
 }
 
 void CSGTest::ToleranceTest() {
-    //_LoadPairObjects("input/beam_cone_vertex_touch.txt", "output/outputToleranceU.txt", UNION);
-    //_LoadPairObjects("input/beam_cone_vertex_touch.txt", "output/outputToleranceD.txt", DIFFERENCE);
+    _LoadPairObjects("input/beam_cone_vertex_touch.txt", "output/outputToleranceU.txt", UNION);
+    _LoadPairObjects("input/beam_cone_vertex_touch.txt", "output/outputToleranceD.txt", DIFFERENCE);
     _LoadPairObjects("input/beam_cone_vertex_touch.txt", "output/outputToleranceI.txt", INTERSECTION);
 }
 

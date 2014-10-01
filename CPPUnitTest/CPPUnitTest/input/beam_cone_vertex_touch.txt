@@ -31,7 +31,7 @@ Facet: 4, Down
 0; 0; 3
 
 Object: 5, ThinCone, 0xD99308
-Translation: 9.9999; 0; 2;
+Translation: 9.9999; 0; 2
 Facet: 3, Back
 0; 0; 0
 10; 0.7; 0
