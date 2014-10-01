@@ -1,1 +1,1 @@
-java -jar debugAlg.jar
+java -jar Viewer.jar

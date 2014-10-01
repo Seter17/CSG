@@ -1,1 +1,0 @@
-java -jar debugAlg.jar floorplan
