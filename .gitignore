@@ -48,3 +48,7 @@ Temporary Items
 *.log
 *.user
 Test Viewer/prop.txt
+*.obj
+*.tlog
+*.pdb
+*.idb
