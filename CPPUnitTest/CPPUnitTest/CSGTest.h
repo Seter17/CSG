@@ -1,30 +1,29 @@
 #pragma once
 #include "FileManager.h"
 
-class CSGTest
-{
+class CSGTest {
 public:
-    CSGTest(void);
-    ~CSGTest(void);
+	CSGTest(void);
+	~CSGTest(void);
 
-    void IntersectionTest();
+	void IntersectionTest();
 
-    void UnioinTest();
+	void UnioinTest();
 
-    void DifferenceTest();
+	void DifferenceTest();
 
-    void DetectIntersection();
+	void DetectIntersection();
 
-    void ToleranceTest();
+	void ToleranceTest();
 
-    void SplitTest();
+	void SplitTest();
 
-    void SubdivideTest();
+	void SubdivideTest();
 
 private:
-    enum Operation { UNION, DIFFERENCE, INTERSECTION, SPLIT_FIRST, SPLIT_SECOND, SUBDIVIDE_FIRST, SUBDIVIDE_SECOND, NONE};
-    FileManager parser;
-    void _LoadObject(const string& input, const string& output);
-    void _LoadPairObjects(const string& input, const string& output, Operation operation);
+	enum Operation { UNION, DIFFERENCE, INTERSECTION, SPLIT_FIRST, SPLIT_SECOND, SUBDIVIDE_FIRST, SUBDIVIDE_SECOND, NONE };
+	FileManager parser;
+	void _LoadObject(const string& input, const string& output);
+	void _LoadPairObjects(const string& input, const string& output, Operation operation);
 };
 

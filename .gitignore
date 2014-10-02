@@ -52,3 +52,6 @@ Test Viewer/prop.txt
 *.tlog
 *.pdb
 *.idb
+build/Win32_Debug/lib/CSG.lib
+build/Win32_Debug/tmp/CSG.Test/CSG.Test.exe
+build/Win32_Debug/tmp/CSG.Test/CSG.Test.ilk
