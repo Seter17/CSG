@@ -3,6 +3,7 @@
 int main()
 {
     CSGTest test;
+	test.DetectIntersection();
     test.IntersectionTest();
     test.UnioinTest();
     test.DifferenceTest();
