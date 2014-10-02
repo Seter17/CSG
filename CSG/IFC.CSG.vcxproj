@@ -100,11 +100,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DataTypes\Color3.cpp" />
     <ClCompile Include="Extent.cpp" />
     <ClCompile Include="DataTypes\Matrix3.cpp" />
     <ClCompile Include="DataTypes\Matrix4.cpp" />
-    <ClCompile Include="DataTypes\NUQuaternion.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Polygon.cpp" />
     <ClCompile Include="DataTypes\Quaternion.cpp" />
@@ -117,12 +115,10 @@
     <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DataTypes\Color3.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="Extent.h" />
     <ClInclude Include="DataTypes\Matrix3.h" />
     <ClInclude Include="DataTypes\Matrix4.h" />
-    <ClInclude Include="DataTypes\NUQuaternion.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Polygon.h" />
     <ClInclude Include="DataTypes\Quaternion.h" />
@@ -135,11 +131,9 @@
     <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataTypes\Color3.inl" />
     <None Include="Extent.inl" />
     <None Include="DataTypes\Matrix3.inl" />
     <None Include="DataTypes\Matrix4.inl" />
-    <None Include="DataTypes\NUQuaternion.inl" />
     <None Include="Object.inl" />
     <None Include="Polygon.inl" />
     <None Include="DataTypes\Quaternion.inl" />

@@ -1,0 +1,20 @@
+========================
+HOW TO USE DESCRIPTION
+========================
+
+This is implementation of CSG (Constructive Solid Geometry) technique, described by Laidlaw and Trumbore.
+While folder contains 3 part. 
+
+1. CSG project.
+    Project where was implemented whole CSG necessary datatypes and algorithms to perform bollean operations.
+
+2. CPP Unit test
+    Project for testing CSG operation and its parts. Besides code - it includes 3 folders.
+        "Input" - folder that contains several cases of input geometry
+        "Output" - fodler where operations output will take place
+        "Standard" - folder where can be found expected results on "unchanged" input data with implemented tests. Exists for comparing and testing.
+
+3. Test viewer
+    Test application for visualization of input and output data from Test Project.
+    Application need jre7 to be installed and can be launche by clicking on Viewer.jar or launch.bat. 
+    It is possible that j3dcore-ogl.dll should be copied to Windows folder.
